@@ -1,0 +1,19 @@
+<h3>String Interpolation</h3>
+<p>This is string interpolation: {{dataBindingString}}</p>
+<p>This is string interpolation for number by : {{dataBindingNum}}</p>
+
+<h3>Data Binding</h3>
+<input type="text" value="{{dataBindingPropertyValue}}" />
+<input type="text" [value]="dataBindingPropertyValue" />
+
+<p [ngClass]="{ngClassPropertyBinding: ngClassPB()}">ngClass property binding</p>
+<p [ngStyle]="{color: ngStylePB()}">ngStyle property binding</p>
+
+<h3>Custom Property Binding</h3>
+property binding by input metadata: <app-property-binding [result]="10"></app-property-binding>
+
+<h3>Event Binding</h3>
+property binding by @Output: <app-event-binding (clickable)="onClicked($event)"></app-event-binding>
+
+<h3>Two Way Binding</h3>
+<app-two-way-binding></app-two-way-binding>
