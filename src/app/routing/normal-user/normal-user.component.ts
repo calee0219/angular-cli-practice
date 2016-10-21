@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   template: `
     <h3>Normal User</h3>
     <button (click)="onNavigate()">Router Navigate</button>
+    <input type="text" #id (input)="0"/>
+    <a [routerLink]="['/au',id.value]">Admin User</a>
   `
 })
 export class NormalUserComponent {
@@ -13,6 +15,6 @@ export class NormalUserComponent {
   constructor(private router: Router) { }
 
   onNavigate() {
-    this.router.navigate(['/au']);
+    this.router.navigate(['/au/fromButton']);
   }
 }

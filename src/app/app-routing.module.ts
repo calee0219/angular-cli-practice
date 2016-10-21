@@ -6,7 +6,7 @@ import { AdvanceUserComponent } from './routing/advance-user/advance-user.compon
 
 const routes: Routes = [
   { path: '', component: NormalUserComponent },
-  { path: 'au', component: AdvanceUserComponent }
+  { path: 'au/:id', component: AdvanceUserComponent }
 ];
 
 @NgModule({
