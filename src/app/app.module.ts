@@ -10,6 +10,10 @@ import { EventBindingComponent } from './data-binding/event-binding.component';
 import { NgContentComponent } from './ng-content.component';
 import { TwoWayBindingComponent } from './data-binding/two-way-binding.component';
 import { LifeCycleComponent } from './life-cycle.component';
+import { NormalUserComponent } from './routing/normal-user/normal-user.component';
+import { AdvanceUserComponent } from './routing/advance-user/advance-user.component';
+
+import { AngularCliRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { LifeCycleComponent } from './life-cycle.component';
     EventBindingComponent,
     NgContentComponent,
     TwoWayBindingComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    NormalUserComponent,
+    AdvanceUserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularCliRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

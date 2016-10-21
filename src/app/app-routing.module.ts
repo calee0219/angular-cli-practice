@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { NormalUserComponent } from './routing/normal-user/normal-user.component';
+import { AdvanceUserComponent } from './routing/advance-user/advance-user.component';
+
+const routes: Routes = [
+  { path: '', component: NormalUserComponent },
+  { path: 'au', component: AdvanceUserComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -9,3 +15,4 @@ const routes: Routes = [];
   providers: []
 })
 export class AngularCliRoutingModule { }
+
