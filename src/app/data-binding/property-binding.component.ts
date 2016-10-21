@@ -4,8 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-property-binding',
   template: `
     {{result}}
-  `,
-  input: ['result']
+  `
 })
 export class PropertyBindingComponent {
 
