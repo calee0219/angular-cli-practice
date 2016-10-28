@@ -1,0 +1,19 @@
+<p>
+  home works!
+</p>
+<h3>ng-content</h3>
+<app-ng-content>
+  <p>this is out of app-ng-content file</p>
+</app-ng-content>
+
+<h2>Data Binding</h2>
+<app-data-binding></app-data-binding>
+
+<h3>life cycle</h3>
+<app-life-cycle></app-life-cycle>
+
+<h2>Routing</h2>
+Using href: <a href="/nu">Normal User</a><br/>
+Using href: <a href="au/href">Admin User</a><br/>
+Using routerLink with absolute direction: <a [routerLink]="['/nu']">Normal User</a><br/>
+Using routerLink with relative direction: <a [routerLink]="['au/OriginPage']">Admin User</a>

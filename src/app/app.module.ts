@@ -14,6 +14,7 @@ import { NormalUserComponent } from './routing/normal-user/normal-user.component
 import { AdvanceUserComponent } from './routing/advance-user/advance-user.component';
 
 import { AngularCliRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AngularCliRoutingModule } from './app-routing.module';
     TwoWayBindingComponent,
     LifeCycleComponent,
     NormalUserComponent,
-    AdvanceUserComponent
+    AdvanceUserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,5 @@
 <h1>
   {{title}}
 </h1>
-<h3>ng-content</h3>
-<app-ng-content>
-  <p>this is out of app-ng-content file</p>
-</app-ng-content>
 
-<h2>Data Binding</h2>
-<app-data-binding></app-data-binding>
-
-<h3>life cycle</h3>
-<app-life-cycle></app-life-cycle>
-
-<h2>Routing</h2>
-Using href: <a href="/">Normal User</a><br/>
-Using href: <a href="au/fromHref">Admin User</a><br/>
-Using routerLink with absolute direction: <a [routerLink]="['/']">Normal User</a><br/>
-Using routerLink with relative direction: <a [routerLink]="['au/fromOriginPage']">Admin User</a>
 <router-outlet></router-outlet>
